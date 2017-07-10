@@ -1,17 +1,15 @@
 # BypassPicassoImageGetter
 Loads images for Bypass using Picasso
 
-[![Build Status](https://travis-ci.org/Commit451/BypassPicassoImageGetter.svg?branch=master)](https://travis-ci.org/Commit451/BypassPicassoImageGetter)
-[![](https://jitpack.io/v/Commit451/BypassPicassoImageGetter.svg)](https://jitpack.io/#Commit451/BypassPicassoImageGetter)
-
 # Usage
 ```java
-textView.setText(bypass.markdownToSpannable(text,
-    new BypassPicassoImageGetter(textView, Picasso.with(MainActivity.this))));
+textView.setText(bypass.markdownToSpannable(response.body().string(), 
+    new BypassGlideImageGetter(textView, Glide.with(MainActivity.this))));
 ```
 See the sample project for a comprehensive example.
 
 Original credits: http://stackoverflow.com/a/25530488/504611
+Fork from: https://github.com/Commit451/BypassPicassoImageGetter
 
 License
 --------
