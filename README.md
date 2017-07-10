@@ -1,7 +1,15 @@
 # BypassPicassoImageGetter
 Loads images for Bypass using Glide
 
+[![](https://jitpack.io/v/victorlaerte/BypassGlideImageGetter.svg)](https://jitpack.io/#victorlaerte/BypassGlideImageGetter)
+
 # Usage
+
+```
+dependencies {
+        compile 'com.github.victorlaerte:BypassGlideImageGetter:1.1.1'
+}
+```      
 ```java
 textView.setText(bypass.markdownToSpannable(response.body().string(), 
     new BypassGlideImageGetter(textView, Glide.with(MainActivity.this))));
