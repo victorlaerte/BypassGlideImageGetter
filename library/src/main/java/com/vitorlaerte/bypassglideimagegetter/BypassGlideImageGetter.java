@@ -1,4 +1,4 @@
-package com.commit451.bypassglideimagegetter;
+package com.vitorlaerte.bypassglideimagegetter;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

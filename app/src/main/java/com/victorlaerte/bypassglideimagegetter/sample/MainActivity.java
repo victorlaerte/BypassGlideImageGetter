@@ -8,7 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.commit451.bypassglideimagegetter.BypassGlideImageGetter;
+import com.vitorlaerte.bypassglideimagegetter.BypassGlideImageGetter;
 
 import in.uncod.android.bypass.Bypass;
 import okhttp3.ResponseBody;
