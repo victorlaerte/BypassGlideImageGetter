@@ -1,6 +1,7 @@
 # BypassPicassoImageGetter
 Loads images for Bypass using Glide
 
+[![Build Status](https://travis-ci.org/victorlaerte/BypassGlideImageGetter.svg?branch=master)](https://travis-ci.org/victorlaerte/BypassGlideImageGetter)
 [![](https://jitpack.io/v/victorlaerte/BypassGlideImageGetter.svg)](https://jitpack.io/#victorlaerte/BypassGlideImageGetter)
 
 # Usage
