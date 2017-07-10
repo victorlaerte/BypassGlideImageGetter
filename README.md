@@ -1,5 +1,5 @@
 # BypassPicassoImageGetter
-Loads images for Bypass using Picasso
+Loads images for Bypass using Glide
 
 # Usage
 ```java
@@ -9,6 +9,7 @@ textView.setText(bypass.markdownToSpannable(response.body().string(),
 See the sample project for a comprehensive example.
 
 Original credits: http://stackoverflow.com/a/25530488/504611
+
 Fork from: https://github.com/Commit451/BypassPicassoImageGetter
 
 License
