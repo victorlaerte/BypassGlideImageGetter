@@ -1,4 +1,4 @@
-package com.commit451.bypasspicassoimagegetter.sample;
+package com.commit451.bypassglideimagegetter;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

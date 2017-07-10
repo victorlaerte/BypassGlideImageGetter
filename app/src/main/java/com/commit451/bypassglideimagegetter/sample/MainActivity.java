@@ -1,4 +1,4 @@
-package com.commit451.bypasspicassoimagegetter.sample;
+package com.commit451.bypassglideimagegetter.sample;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,8 +7,8 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.commit451.bypasspicassoimagegetter.BypassPicassoImageGetter;
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
+import com.commit451.bypassglideimagegetter.BypassGlideImageGetter;
 
 import in.uncod.android.bypass.Bypass;
 import okhttp3.ResponseBody;
@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     Bypass bypass = new Bypass(MainActivity.this);
                     try {
-                        BypassPicassoImageGetter imageGetter = new BypassPicassoImageGetter(textView, Picasso.with(MainActivity.this));
-                        imageGetter.setSourceModifier(new BypassPicassoImageGetter.SourceModifier() {
+                        BypassGlideImageGetter imageGetter = new BypassGlideImageGetter(textView, Glide.with(MainActivity.this));
+                        imageGetter.setSourceModifier(new BypassGlideImageGetter.SourceModifier() {
                             @Override
                             public String modify(String source) {
                                 Log.d("IMAGE", "loading image " + source);

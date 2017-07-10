@@ -1,4 +1,4 @@
-package com.commit451.bypasspicassoimagegetter;
+package com.commit451.bypassglideimagegetter;
 
 import org.junit.Test;
 

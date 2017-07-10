@@ -1,4 +1,4 @@
-package com.commit451.bypasspicassoimagegetter;
+package com.commit451.bypassglideimagegetter;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.RequestManager;
 
 import java.lang.ref.WeakReference;
 
@@ -16,16 +16,16 @@ import in.uncod.android.bypass.Bypass;
 /**
  * Original credits: http://stackoverflow.com/a/25530488/504611
  */
-public class BypassPicassoImageGetter implements Bypass.ImageGetter {
+public class BypassGlideImageGetter implements Bypass.ImageGetter {
 
-    private final Picasso mPicasso;
+    private final RequestManager mGlideRequestManager;
     private final WeakReference<TextView> mTextView;
     private int maxWidth = -1;
     private SourceModifier mSourceModifier;
 
-    public BypassPicassoImageGetter(final TextView textView, final Picasso picasso) {
+    public BypassGlideImageGetter(final TextView textView, final RequestManager glideRequestManager) {
         mTextView = new WeakReference<>(textView);
-        mPicasso = picasso;
+        mGlideRequestManager = glideRequestManager;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class BypassPicassoImageGetter implements Bypass.ImageGetter {
             @Override
             protected Bitmap doInBackground(final Void... meh) {
                 try {
-                    return mPicasso.load(finalSource).get();
+                    return mGlideRequestManager.asBitmap().load(finalSource).submit().get();
                 } catch (Exception e) {
                     return null;
                 }
