@@ -18,7 +18,7 @@ See the sample project for a comprehensive example.
 
 Original credits: http://stackoverflow.com/a/25530488/504611
 
-Fork from: https://github.com/Commit451/BypassPicassoImageGetter
+Forked from: https://github.com/Commit451/BypassPicassoImageGetter
 
 License
 --------
