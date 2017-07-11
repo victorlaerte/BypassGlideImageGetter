@@ -1,4 +1,4 @@
-package com.commit451.bypassglideimagegetter;
+package com.victorlaerte.bypassglideimagegetter;
 
 import org.junit.Test;
 

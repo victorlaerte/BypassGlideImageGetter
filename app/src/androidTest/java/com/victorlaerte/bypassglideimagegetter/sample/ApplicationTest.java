@@ -1,4 +1,4 @@
-package com.commit451.bypassglideimagegetter.sample;
+package com.victorlaerte.bypassglideimagegetter.sample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
