@@ -8,7 +8,7 @@ Loads images for Bypass using Glide
 
 ```
 dependencies {
-        compile 'com.github.victorlaerte:BypassGlideImageGetter:1.1.2'
+        compile 'com.github.victorlaerte:BypassGlideImageGetter:1.1.3'
 }
 ```      
 ```java
